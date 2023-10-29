@@ -38,4 +38,17 @@ final class Banking_Data_TDDTests: XCTestCase {
         
         XCTAssertEqual(sampleAccount.balance, -100)
     }
+    
+    //3. Print the Account statement to the console
+    func testPrintStatements() {
+
+        let sampleAccount = Account(balance: 400)
+        
+        sampleAccount.deposit(amount: 500)
+        sampleAccount.withdraw(amount: 100)
+        sampleAccount.deposit(amount: 1000)
+        
+        sampleAccount.printStatement()
+        
+    }
 }
