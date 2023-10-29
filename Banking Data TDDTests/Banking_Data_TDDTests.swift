@@ -10,4 +10,10 @@ import XCTest
 
 final class Banking_Data_TDDTests: XCTestCase {
 
+    //1. Deposit into Account
+    func testDepositIntoAccount() {
+        let sample = Account(balance: 123, dates: [])
+        
+        XCTAssertEqual(<#T##expression1: Equatable##Equatable#>, <#T##expression2: Equatable##Equatable#>)
+    }
 }

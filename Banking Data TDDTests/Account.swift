@@ -8,9 +8,7 @@
 import Foundation
 
 class Account {
-    
-    let name: String
-    var balance: Double
+    var balance: Int
     var dates: [String]
     
     func deposit (amount: Int) {
@@ -25,10 +23,8 @@ class Account {
         
     }
     
-    init(name: String, balance: Double, dates: [String]) {
-        self.name = name
+    init(balance: Int, dates: [String]) {
         self.balance = balance
         self.dates = dates
     }
-    
 }
