@@ -11,9 +11,20 @@ import XCTest
 final class Banking_Data_TDDTests: XCTestCase {
 
     //1. Deposit into Account
-    func testDepositIntoAccount() {
-        let sample = Account(balance: 123, dates: [])
+    func testDepositIntoAccountWithZeroBalance() {
+        let sampleAccount = Account()
+        let sampleTransaction = Transaction(date: "29/10/23", amount: 100)
         
-        XCTAssertEqual(<#T##expression1: Equatable##Equatable#>, <#T##expression2: Equatable##Equatable#>)
+        sampleAccount.deposit(transaction: sampleTransaction)
+        
+        XCTAssertEqual(sampleAccount.balance, sampleTransaction.amount)
+    }
+    func testDepositIntoAccountWithPositiveBalance() {
+        let sampleAccount = Account(balance: 100)
+        let sampleTransaction = Transaction(date: "29/10/23", amount: 100)
+        
+        sampleAccount.deposit(transaction: sampleTransaction)
+        
+        XCTAssertEqual(sampleAccount.balance, sampleTransaction.amount+100)
     }
 }

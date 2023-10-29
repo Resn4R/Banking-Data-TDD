@@ -14,7 +14,8 @@
 		4F5E6C652AEEE44E0044A1D0 /* Banking_Data_TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E6C642AEEE44E0044A1D0 /* Banking_Data_TDDTests.swift */; };
 		4F5E6C6F2AEEE44E0044A1D0 /* Banking_Data_TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E6C6E2AEEE44E0044A1D0 /* Banking_Data_TDDUITests.swift */; };
 		4F5E6C712AEEE44E0044A1D0 /* Banking_Data_TDDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E6C702AEEE44E0044A1D0 /* Banking_Data_TDDUITestsLaunchTests.swift */; };
-		4F5E6C7E2AEEE4AE0044A1D0 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E6C7D2AEEE4AE0044A1D0 /* Account.swift */; };
+		4F67CCB72AEF03CE002AFDB1 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E6C7D2AEEE4AE0044A1D0 /* Account.swift */; };
+		4F67CCB82AEF03D0002AFDB1 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67CCB52AEF03B3002AFDB1 /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4F5E6C6E2AEEE44E0044A1D0 /* Banking_Data_TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banking_Data_TDDUITests.swift; sourceTree = "<group>"; };
 		4F5E6C702AEEE44E0044A1D0 /* Banking_Data_TDDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banking_Data_TDDUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4F5E6C7D2AEEE4AE0044A1D0 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		4F67CCB52AEF03B3002AFDB1 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,8 @@
 			children = (
 				4F5E6C532AEEE44D0044A1D0 /* Banking_Data_TDDApp.swift */,
 				4F5E6C552AEEE44D0044A1D0 /* ContentView.swift */,
+				4F5E6C7D2AEEE4AE0044A1D0 /* Account.swift */,
+				4F67CCB52AEF03B3002AFDB1 /* Transaction.swift */,
 				4F5E6C572AEEE44E0044A1D0 /* Assets.xcassets */,
 				4F5E6C592AEEE44E0044A1D0 /* Preview Content */,
 			);
@@ -116,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				4F5E6C642AEEE44E0044A1D0 /* Banking_Data_TDDTests.swift */,
-				4F5E6C7D2AEEE4AE0044A1D0 /* Account.swift */,
 			);
 			path = "Banking Data TDDTests";
 			sourceTree = "<group>";
@@ -262,6 +265,8 @@
 			files = (
 				4F5E6C562AEEE44D0044A1D0 /* ContentView.swift in Sources */,
 				4F5E6C542AEEE44D0044A1D0 /* Banking_Data_TDDApp.swift in Sources */,
+				4F67CCB82AEF03D0002AFDB1 /* Transaction.swift in Sources */,
+				4F67CCB72AEF03CE002AFDB1 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F5E6C652AEEE44E0044A1D0 /* Banking_Data_TDDTests.swift in Sources */,
-				4F5E6C7E2AEEE4AE0044A1D0 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
